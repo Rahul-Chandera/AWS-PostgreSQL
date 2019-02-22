@@ -1,10 +1,10 @@
 
 exports.handler = function (event, context, callback) {
 
-  const { Pool, Client } = require('pg')
+  const { Pool } = require('pg')
 
   const pool = new Pool({
-    database: 'YOUR DB NAME', // Set database name here which you have specified while creating RDS database. Make sure that DB instance identifier and Database name both are separate thing. Here you have to set the Database name, and not the instance identifier. 
+    database: 'YOUR DB NAME',
     user: 'DB USER NAME',
     password: 'DB PASSWORD',
     host: 'HOST URL',
