@@ -19,6 +19,20 @@ Make sure that Database instance name and Database name both are separate thing.
 Host & port you can find in AWS RDS database console. Check the "Connectivity & security" section, you will find Endpoint & Post there.
 
 Once connection is established, you can fetch data by creating query object with sql query and parameters. Make sure to release client object once your task is complete. 
+```
+pool.connect().then(client => {
+    const query = {
+      name: 'QUERY NAME',
+      text: 'SQL QUERY',
+      values: [QUERY PARAMETERS IF ANY],
+    }
+
+    client.query(query, (err, res) => {
+      console.log(res)
+    })
+    client.release()
+  });
+```
 
 Reference:
 -
