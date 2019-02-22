@@ -34,8 +34,13 @@ pool.connect().then(client => {
   });
 ```
 
-If you want to test do any manual operations into your database, like creating tables or adding some data, you can use [SQLWorkbench](http://www.sql-workbench.eu/downloads.html). It is a nice tool to test and do basic operations on DB. 
-You can find more information about it in below AWS reference link.
+If you want to test do any manual operations into your database, like creating tables or adding some data, you can use [SQLWorkbench](http://www.sql-workbench.eu/downloads.html). It is a nice tool to test and do basic operations on DB.
+
+To setup SQLWorkbench in Mac machine, first download and copy it into Applications folder, then execute below command in terminal to launch SQLWorkbench,
+```
+java -jar /Applications/SQLWorkbenchJ.app/Contents/Java/sqlworkbench.jar
+```
+To connect SQLWorkbench with your Database, follow instruction given in below AWS reference link.
 
 Reference:
 -
