@@ -1,4 +1,4 @@
-# AWS-PostgreSQL
+# AWS-RDS-PostgreSQL
 This sample demonstrates how to connect and query data from PostgreSQL, using Lambda function.
 
 Dependancies:
